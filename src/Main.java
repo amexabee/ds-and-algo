@@ -8,8 +8,9 @@ public class Main {
         list.addFirst(3);
         list.addFirst(2);
         list.addFirst(1);
-        list.addFirst(6);
-        list.removeFirst();
+//        list.addFirst(6);
+//        list.removeFirst();
+        list.reverse();
         list.print();
     }
 }

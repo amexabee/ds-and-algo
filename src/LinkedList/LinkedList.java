@@ -11,10 +11,10 @@ public class LinkedList {
             this.value = value;
         }
 
-//        @Override
-//        public String toString() {
-//            return value + " -> " + next;
-//        }
+        @Override
+        public String toString() {
+            return value + " -> " + next;
+        }
     }
 
     private Node first;
@@ -116,5 +116,20 @@ public class LinkedList {
         }
 
         return arr;
+    }
+
+    public void reverse() {
+        if (size <  1) return;
+
+        var current = last;
+        while (current != first) {
+            var previous = getPrevious(current);
+            previous.next = null;
+            current.next = previous;
+            current = previous;
+        }
+
+        first = last;
+        last = current;
     }
 }
