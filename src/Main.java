@@ -10,7 +10,8 @@ public class Main {
         list.addFirst(1);
 //        list.addFirst(6);
 //        list.removeFirst();
-        list.reverse();
-        list.print();
+//        list.reverse();
+//        list.print();
+        System.out.println(list.getKthFromTheEnd(-1));
     }
 }

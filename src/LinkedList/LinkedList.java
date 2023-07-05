@@ -132,4 +132,19 @@ public class LinkedList {
         first = last;
         last = current;
     }
+
+    public int getKthFromTheEnd(int k) {
+        if (first == null) throw new IllegalStateException();
+
+        var p1 = first;
+        var p2 = first;
+        var i = 0;
+        while (p2.next != null) {
+            if (i >= k - 1) p1 = p1.next;
+            p2 = p2.next;
+            i++;
+        }
+
+        return p1.value;
+    }
 }
