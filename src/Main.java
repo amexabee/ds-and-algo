@@ -8,10 +8,10 @@ public class Main {
         list.addFirst(3);
         list.addFirst(2);
         list.addFirst(1);
-//        list.addFirst(6);
+        list.addLast(6);
 //        list.removeFirst();
 //        list.reverse();
 //        list.print();
-        System.out.println(list.getKthFromTheEnd(-1));
+        list.printMiddle();
     }
 }
